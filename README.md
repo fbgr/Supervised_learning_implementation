@@ -30,7 +30,7 @@ Linear regression and logistic regression consists on finding the optimal parame
 In **linear regression**, the most typical cost function used in data analysis is the **Squared error** equal to $$J(\vec{w},b)=\frac{1}{2m}\sum_{i=1}^m(f_{\vec{w},b}(\vec{x}^{(i)})-y^{(i)})^2$$ where $f_{\vec{w},b}(\vec{x}^{(i)})$ is the prediction of our model for the sample $\vec{x}^{(i)}$. 
 
 In **logistic regression** our prediction $f_{\vec{w},b}(\vec{x}^{(i)})$ is a bit different since it involves the sigmoid $g(z)=(1+\exp(-z))^{-1}$. This forces us to change our cost function to make the algorithm efficient:
-$$\begin{equation*}\begin{split}J (\vec{w},b) = -\frac{1}{m} \sum_{i=1}^m [y^{(i)}\log(f_{\vec{w},b}(\vec{x}^{(i)}))+(1-y^{(i)})\log(1-f_{\vec{w},b}(\vec{x}^{(i)}))] \end{split} \end{equation*}$$
+$$J (\vec{w},b) = -\frac{1}{m} \sum_{i=1}^m [y^{(i)}\log(f_{\vec{w},b}(\vec{x}^{(i)}))+(1-y^{(i)})\log(1-f_{\vec{w},b}(\vec{x}^{(i)}))]$$
 
 In **both cases** we will be using **Gradient descent**: an algorithm that works by driving the parameters into the opposite direction of the gradient (i.e. the direction of steepest descent for that point). When computing the gradient (partial derivates), both cost functions result in the same expressions in terms of $f_{\vec{w},b}(\vec{x}^{(i)})$. Thus the algorithm will update the parameters in each iteration according to:
 $$w \rightarrow w-\alpha \frac{1}{m}\sum_{i=1}^{m}(f_{w,b}(\vec{x}^{(i)})-y^{(i)})x^{(i)}$$
