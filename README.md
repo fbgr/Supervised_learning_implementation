@@ -57,9 +57,9 @@ The optimal parameters found are equal or very close to the ideal parameters for
 
 We can visually see that the parameters found for the logistic regression work aswell
 - Logistic regression - Test 1
-<img src="images/example1.png"/>
+<img src="images/example_1.png"/>
 - Logistic regression - Test 2
-<img src="images/example2.png"/>
+<img src="images/example_2.png"/>
 
 
 <a id='section11'></a>
