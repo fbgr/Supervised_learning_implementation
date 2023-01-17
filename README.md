@@ -42,7 +42,7 @@ Since we're always moving in the gradient direction, we should expect the cost f
 
 In all test examples I found that the cost function decreases in every iteration, as we expeceted. All examples followed this pattern:
 
-<img src="images/black_cost.png"/>
+<img src="images/bl_cost.png"/>
 
 The optimal parameters found are equal or very close to the ideal parameters for each example:
 - Linear regression: **Test 1**
@@ -57,10 +57,10 @@ The optimal parameters found are equal or very close to the ideal parameters for
 
 We can visually see that the parameters found for the logistic regression work aswell
 - Logistic regression: **Test 1**
-<img src="images/example_1.png"/>
-- Logistic regression: **Test 2**
-<img src="images/example_2.png"/>
+<img src="images/bl_example_1.png"/>
 
+- Logistic regression: **Test 2**
+<img src="images/bl_example_2.png"/>
 
 <a id='section11'></a>
 ### License
