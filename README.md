@@ -45,20 +45,20 @@ In all test examples I found that the cost function decreases in every iteration
 <img src="images/black_cost.png"/>
 
 The optimal parameters found are equal or very close to the ideal parameters for each example:
-- Linear regression - Test 1
-    - The ideal solution is w = [[2]], b = 10.00
-    - The solution found is w = [[2.01]], b = 9.80
-- Linear regression - Test 2
-    - The ideal solution is w = [[37]], b = -20.00
-    - The solution found is w = [[36.98]], b = -19.56.
-- Linear regression - Test 3
-    - The ideal solution is w = [[ 5 -5]], b = -10.00
-    - The solution found is w = [[ 5. -5.]], b = -10.00.
+- Linear regression: **Test 1**
+    - The ideal solution is w = 2, b = 10.00
+    - The solution found is w = 2.01, b = 9.80
+- Linear regression: **Test 2**
+    - The ideal solution is w = 37, b = -20.00
+    - The solution found is w = 36.98, b = -19.56
+- Linear regression: **Test 3**
+    - The ideal solution is w = [5 -5], b = -10.00
+    - The solution found is w = [5 -5], b = -10.00
 
 We can visually see that the parameters found for the logistic regression work aswell
-- Logistic regression - Test 1
+- Logistic regression: **Test 1**
 <img src="images/example_1.png"/>
-- Logistic regression - Test 2
+- Logistic regression: **Test 2**
 <img src="images/example_2.png"/>
 
 
