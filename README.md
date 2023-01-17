@@ -27,7 +27,9 @@ I will be using **Numpy**'s library to be able to vectorize the computations and
 ### Methods
 Linear regression and logistic regression consists on finding the optimal parameters $\vec{w},b$ such as that the cost function is minimal. Hence, all we have to do is solve an optimization problem.
 
-In **linear regression**, the most typical cost function used in data analysis is the **Squared error** equal to $$ J(\vec{w},b)=\frac{1}{2m}\sum_{i=1}^m(f_{\vec{w},b}(\vec{x}^{(i)})-y^{(i)})^2 $$ where $f_{\vec{w},b}(\vec{x}^{(i)})$ is the prediction of our model for the sample $\vec{x}^{(i)}$. 
+In **linear regression**, the most typical cost function used in data analysis is the **Squared error** equal to 
+$$ J(\vec{w},b)=\frac{1}{2m}\sum_{i=1}^m(f_{\vec{w},b}(\vec{x}^{(i)})-y^{(i)})^2 $$
+where $f_{\vec{w},b}(\vec{x}^{(i)})$ is the prediction of our model for the sample $\vec{x}^{(i)}$. 
 
 In **logistic regression** our prediction $f_{\vec{w},b}(\vec{x}^{(i)})$ is a bit different since it involves the sigmoid $g(z)=(1+\exp(-z))^{-1}$. This forces us to change our cost function to make the algorithm efficient:
 $$ \begin{equation*}\begin{split}J (\vec{w},b) = -\frac{1}{m} \sum_{i=1}^m [y^{(i)}\log(f_{\vec{w},b}(\vec{x}^{(i)}))+(1-y^{(i)})\log(1-f_{\vec{w},b}(\vec{x}^{(i)}))] \end{split} \end{equation*} $$
